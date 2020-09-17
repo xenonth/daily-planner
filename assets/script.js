@@ -7,10 +7,17 @@ todaysDate();
 
 // Adding a btn to the last field.
  var saveBtn = $('<button></button>')
+ 
 // When clicked elements in the input field are saved to local storage
 saveBtn.on("click", function (event) {
   event.preventDefault();
-  console.log(`${$("input").innerHTML}`)
+   var content = []
+  for (i = 7; i < 22 ; i++) {
+    
+    content.push(`${$("#i").val()}`);
+    localStorage.setItem(`${i}`, `${content[(i-7)]}`);
+  };
+  console.log(`${$("input").val()}`);
  //localStorage.setItem('agenda', `${$("input").content}`);  
 });
 
@@ -19,7 +26,7 @@ $(".svBtn").append(saveBtn);
 //Hours for the timetable.
 var timeTable = {
     seventhHour: 0700,
-    eighthHour: 0700,
+    eighthHour: 0800,
     ninthHour: 0900,
     tenthHour: 1000,
     eleventhHour: 1100,
