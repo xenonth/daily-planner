@@ -1,3 +1,11 @@
+$(document).ready (function () {
+    for (i = 7; i < 22 ; i++) {
+    
+  $("#" + i).val(localStorage.getItem(`${i}`));
+  };
+ //localStorage.setItem('agenda', `${$("input").content}`);  
+})
+
 // To display todays date
 function todaysDate() {
     var date = `${moment().format('dddd')}, ${moment().format('ll')}`;
@@ -13,13 +21,15 @@ saveBtn.on("click", function (event) {
   event.preventDefault();
    var content = []
   for (i = 7; i < 22 ; i++) {
-    
-    content.push(`${$("#i").val()}`);
-    localStorage.setItem(`${i}`, `${content[(i-7)]}`);
+    var x = $("#" + i).val();
+    console.log(x)
+    if (x != "") {
+    content.push(x);
+    localStorage.setItem(`${i}`, x);
+    }
   };
-  console.log(`${$("input").val()}`);
- //localStorage.setItem('agenda', `${$("input").content}`);  
 });
+
 
 $(".svBtn").append(saveBtn);
 
