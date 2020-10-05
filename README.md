@@ -13,6 +13,11 @@ For the layout of this project bootstrap was used in combination with Jquery and
 I tried to be clever and use a while or for loop to append and create the table which was not working so I opted for manual creation which is also reflected in the conditionals to test the time for what the current block is.  
 By comparing the flat hour time against the current time causing the color change in the table sections.
 
-![Alt text](https://github.com/xenonth/homework_five/blob/master/assets/all-full.png?raw=true "Empty Plan")
+Picture of an empty planner:
+![Alt text](https://github.com/xenonth/homework_five/blob/master/assets/work-day-scheduler-late-arvo.png?raw=true "Full Plan")
 
-Picture of empty array but once filled out and refreshed or reopened the input fields will reapper with the same input value.
+but once filled out and refreshed or reopened the input fields will reapper with the same input value.
+
+![Alt text](https://github.com/xenonth/homework_five/blob/master/assets/all-full.png?raw=true "Full Plan").
+
+Any issues or questions contact the developer on the following: timothy.forbes259@gmail.com
